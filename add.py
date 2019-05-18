@@ -1,0 +1,3 @@
+VAR1=5
+VAR2=6
+print(VAR1+VAR2)
