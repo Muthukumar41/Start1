@@ -1,0 +1,81 @@
+#Wifi_card-1:
+#  No_of_groups: 2
+#  Operating_channel: 6
+#
+#Test_shoot-1:
+#  Groups: 1,2
+#  Iteration: 1
+
+Group 1:
+  No_of_clients: 190
+  Connection: SSID-1
+  MAC_prefix: 'b0:c0:98:68:68:'
+  Static_ip: no
+  ip_prefix: 192.168.109.
+  netmask: 255.255.240.0
+  default_gateway: 192.168.101.1
+  dhcp_ip: yes
+  traffic: no
+
+Group 2:
+  No_of_clients: 60
+  Connection: SSID-2
+  MAC_prefix: 'd0:c4:93:83:69:'
+  Static_ip: yes
+  ip_prefix: 192.168.110.
+  netmask: 255.255.240.0
+  default_gateway: 192.168.101.1
+  dhcp_ip: no
+  traffic: 2
+
+SSID-1:
+  SSID: wac540ecp
+  key_mgmt: None
+  password: shinyroad814
+
+SSID-2:
+  SSID: stdalone_5g
+  key_mgmt: none
+  password: sharedkey
+
+Traffic-1:
+  ping: no
+  ping_destination: 192.168.111.193
+  ping_no_of_packets: no
+  ping_each_packet_interval: no
+  ping_run_time(sec): 36000
+  iperf: no
+  iperf_server: 192.168.0.1
+  iperf_packets: tcp
+  iperf_run_time(sec): 249200
+  iperf_total_data: no
+  iperf_voice: no
+  iperf_video: no
+  iperf_streams: no
+  iperf_port_number: no
+  iperf_window_size: no
+  iperf_bandwidth: no
+  iperf_buffer_size: no
+  wget: no
+  wget_link: 192.168.100.20/private_images/one.tar
+
+Traffic-2:
+  ping: yes
+  ping_destination: 192.168.106.47
+  ping_no_of_packets: no
+  ping_each_packet_interval: no
+  ping_run_time(sec): 36000
+  iperf: no
+  iperf_server: 192.168.0.169
+  iperf_packets: tcp
+  iperf_run_time(sec): 200
+  iperf_total_data: no
+  iperf_voice: no
+  iperf_video: no
+  iperf_streams: 8
+  iperf_port_number: no
+  iperf_window_size: no
+  iperf_bandwidth: 15M
+  iperf_buffer_size: no
+  wget: no 
+  wget_link: dfsdf
